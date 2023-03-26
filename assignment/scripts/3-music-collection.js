@@ -25,4 +25,45 @@ let record2 = {
 
 addtoCollection(record2)
 
-console.log('added DS2 to the collection'); 
+console.log('added DS2 to the collection');
+
+let record3 = {
+    title: 'My Turn', 
+    artist: 'Lil Baby',
+    yearsPublished: 2020
+}
+
+addtoCollection(record3)
+
+console.log('added My Turn to the collection');
+
+let record4 = {
+    title: 'Beautiful Mind',
+    artist: 'Rod Wave',
+    yearsPublished: 2022
+}
+
+addtoCollection(record4)
+
+console.log('added Beautiful Mind to the collection');
+
+let record5 = {
+    title: 'Thank Me Later'
+    artist: 'Drake'
+    yearsPublished: 2010
+}
+
+addtoCollection(record5)
+
+console.log('added Thank Me Later to the collection');
+
+let record6 = {
+    title: 'Tha Carter III'
+    artist: 'Lil Wayne'
+    yearsPublished: 2008
+}
+
+addtoCollection(record6)
+
+console.log('added Tha Carter III to the collection');
+
