@@ -2,70 +2,41 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 function addtoCollection(title, artist, yearsPublished){
-    collection.push(title, artist, yearsPublished);
-}
-
-let record1 = {
-    title: 'Take Care',
-    artist: 'Drake',
-    yearsPublished: 2011
+    let record = { 
+        title: title, 
+        artist: artist, 
+        yearsPublished: yearsPublished
+    }
+    collection.push(record);
 }
 
 console.log('collection is empty');
 
-addtoCollection(record1)
+addtoCollection('Take Care', 'Drake', 2011)
 
 console.log('added Take Care to the collection');
 
-let record2 = {
-    title: 'DS2',
-    artist: 'Furture',
-    yearsPublished: 2015
-}
-
-addtoCollection(record2)
+addtoCollection('DS2', 'Future', 2015)
 
 console.log('added DS2 to the collection');
 
-let record3 = {
-    title: 'My Turn', 
-    artist: 'Lil Baby',
-    yearsPublished: 2020
-}
-
-addtoCollection(record3)
+addtoCollection('My Turn', 'Lil Baby', 2020)
 
 console.log('added My Turn to the collection');
 
-let record4 = {
-    title: 'Beautiful Mind',
-    artist: 'Rod Wave',
-    yearsPublished: 2022
-}
-
-addtoCollection(record4)
+addtoCollection('Beautiful Mind', 'Rod Wave', 2022)
 
 console.log('added Beautiful Mind to the collection');
 
-let record5 = {
-    title: 'Thank Me Later',
-    artist: 'Drake',
-    yearsPublished: 2010
-}
-
-addtoCollection(record5)
+addtoCollection('Thank Me Later', 'Drake', 2010)
 
 console.log('added Thank Me Later to the collection');
 
-let record6 = {
-    title: 'Tha Carter III',
-    artist: 'Lil Wayne',
-    yearsPublished: 2008
-}
-
-addtoCollection(record6)
+addtoCollection('Tha Carter III', 'Lil Wayne', 2008)
 
 console.log('added Tha Carter III to the collection');
+
+console.log('collection'); 
 
 function showCollection(){
     for(let i=0; i<collection.length; i++){
@@ -74,4 +45,21 @@ function showCollection(){
 }
 
 showCollection()
+
+console.log('This is my collection');
+
+function findByArtist(artist){
+    if(artist.length === 0){
+    console.log('no artist found');
+    return [];
+    }
+    else{
+    console.log(artist);
+    return artist;
+    }
+}
+
+findByArtist('Drake')
+
+
 
